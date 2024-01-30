@@ -1,3 +1,4 @@
+//object
 var siswa = new Object();
 siswa.namaDepan = "agung";
 siswa.namaBelakang = "alfatah";
@@ -6,7 +7,18 @@ siswa.namaLengkap = function () {
   return this.namaDepan + " " + this.namaBelakang;
 };
 
+//object JSON
+var siswa2 = {
+  namaDepan: "ilham",
+  namaBelakang: "anugrah",
+  alamat: "bandung",
+  namaLengkap: function () {
+    return this.namaDepan + " " + this.namaBelakang;
+  },
+};
+
 alert("Nama :" + siswa.namaLengkap());
+alert("Nama : " + siswa2.namaLengkap());
 
 // function namaLengkap() {
 
